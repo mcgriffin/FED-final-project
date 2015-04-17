@@ -1,0 +1,129 @@
+/*****************************************************************************
+  walk_in_clinics
+******************************************************************************/
+
+
+@import '../../bower_components/bourbon/dist/_bourbon.scss';
+@import '../../bower_components/neat/app/assets/stylesheets/_neat.scss';
+
+
+
+
+
+/*****************************************************************************
+  Base Styles
+******************************************************************************/
+header {
+	border: 2px solid brown;
+	padding-top: 4px;
+}
+
+body {
+	font-size: 16px;
+}
+
+img {
+	width: 100%;
+}
+
+.menu_button {
+	display: inline-block;
+	border: 1px solid grey;
+	border-radius: 100%;
+	padding: 5px;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+img.menu_button {
+	width: 40px;
+	height: 40px;
+}
+
+img.sort_icon {
+	width: 40px;
+	height: 40px;
+}
+
+footer {
+	border: 1px solid black;
+}
+
+.sorting_icons {
+	border: 1px solid black;
+	padding-top: 4px;
+}
+
+.sort_icon {
+	width: 40px;
+	height: 40px;
+	border: 1px solid grey;
+	padding: 4px;
+	display: inline-block;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+ul {
+	padding: 0px;
+}
+
+li {
+	list-style: none;
+
+}
+
+/*****************************************************************************
+  Layout Styles
+******************************************************************************/
+
+
+
+
+/*****************************************************************************
+  Module Styles
+******************************************************************************/
+
+
+form {
+	border: 2px solid pink;
+/*padding between image and username entry 30/16 = 1.875em */
+	padding-top: 1.875em;
+}
+
+.username_entry {
+	border: 2px solid red;
+}
+
+.password_entry {
+	border: 2px solid green;
+}
+
+.submit_button {
+	border: 2px solid blue;
+}
+
+.google_map {
+	border: 2px solid grey;
+}
+
+.toggle_switch_image {
+	margin: 5px;
+	height: 40px;
+	width: 40px;
+}
+
+.locator_icon {
+	height: 30px;
+	width: 30px;
+}
+
+.clinic_name {
+	border: 1px solid black;
+	padding: 8px;
+	margin: 2px;
+}
+
+
+
+
