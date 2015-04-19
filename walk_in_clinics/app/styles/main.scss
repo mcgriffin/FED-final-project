@@ -13,48 +13,61 @@
 /*****************************************************************************
   Base Styles
 ******************************************************************************/
-header {
-	border: 2px solid brown;
-	padding-top: 4px;
-}
 
-body {
-	font-size: 16px;
-}
+/* Cross page styles */
+	body {
+		font-size: 16px;
+	}
 
-img {
-	width: 100%;
-}
+	header {
+		border: 2px solid brown;
+		padding-top: 4px;
+	}
 
-.menu_button {
+	footer {
+		border: 1px solid black;
+	}	
+
+	img {
+		width: 100%;
+	}
+
+
+	ul {
+		padding: 0px;
+	}
+
+
+	li {
+		list-style: none;
+	}
+
+/*****************************************************************************
+  Layout Styles
+******************************************************************************/
+
+/* Top menu bar: home, location, checkin, stats, search */
+	.menu_button {
 	display: inline-block;
 	border: 1px solid grey;
 	border-radius: 100%;
 	padding: 5px;
 	margin-left: 5px;
 	margin-right: 5px;
-}
+	}
 
-img.menu_button {
+	img.menu_button {
 	width: 40px;
 	height: 40px;
-}
+	}
 
-img.sort_icon {
-	width: 40px;
-	height: 40px;
-}
-
-footer {
-	border: 1px solid black;
-}
-
-.sorting_icons {
+/* Middle menu bar: visibility of system state (favourites, wait times, hours, clinicians) */
+	.sorting_icons {
 	border: 1px solid black;
 	padding-top: 4px;
-}
+	}
 
-.sort_icon {
+	.sort_icon {
 	width: 40px;
 	height: 40px;
 	border: 1px solid grey;
@@ -62,68 +75,132 @@ footer {
 	display: inline-block;
 	margin-left: 10px;
 	margin-right: 10px;
-}
+	}
 
-ul {
-	padding: 0px;
-}
-
-li {
-	list-style: none;
-
-}
-
-/*****************************************************************************
-  Layout Styles
-******************************************************************************/
+	img.sort_icon {
+	width: 40px;
+	height: 40px;
+	}
 
 
+/* Map styling and interface buttons */
+	.google_map {
+	border: 2px solid grey;
+	}
+
+	.toggle_switch_image {
+	margin: 5px;
+	height: 40px;
+	width: 40px;
+	}
+
+	.locator_icon {
+	height: 30px;
+	width: 30px;
+	}
 
 
 /*****************************************************************************
   Module Styles
 ******************************************************************************/
 
+/* Login screen --> index.html */
+	form {
+		border: 2px solid pink;
+		/*padding between image and username entry 30/16 = 1.875em */
+		padding-top: 1.875em;
+	}
 
-form {
-	border: 2px solid pink;
-/*padding between image and username entry 30/16 = 1.875em */
-	padding-top: 1.875em;
-}
+	.username_entry {
+		border: 2px solid red;
+	}
 
-.username_entry {
-	border: 2px solid red;
-}
+	.password_entry {
+		border: 2px solid green;
+	}
 
-.password_entry {
-	border: 2px solid green;
-}
-
-.submit_button {
-	border: 2px solid blue;
-}
-
-.google_map {
-	border: 2px solid grey;
-}
-
-.toggle_switch_image {
-	margin: 5px;
-	height: 40px;
-	width: 40px;
-}
-
-.locator_icon {
-	height: 30px;
-	width: 30px;
-}
-
-.clinic_name {
-	border: 1px solid black;
-	padding: 8px;
-	margin: 2px;
-}
+	.submit_button {
+		border: 2px solid blue;
+	}
 
 
+/* Find or checkin buttons --> find_or_check.html */
+	.find_a_clinic_button, .checkin_button {
+		border: 2px solid green;
+		border-radius: 4px;
+		padding: 4px;
+		margin: 5px;
+		color: black;
+	}
+
+	.find_a_clinic_button:visited, .checkin_button:visited {
+		color: black;
+	}
+
+/* check_in.html */
+	.return {
+		border: 2px solid black;
+		border-radius: 4px;
+		padding: 4px;
+		margin: 5px;
+		color: black;
+	}
+
+	.return:visited {
+		color: black;
+	}
+
+	img.check_in_icon {
+		width: 250px;
+		margin: auto;
+	}
 
 
+/* find_a_clinic_favourites.html */
+	.clinic_name {
+		border: 1px solid black;
+		border-radius: 4px;
+		padding: 8px;
+		margin: 2px;
+		color: black;
+		text-decoration: none;
+	}
+
+	.clinic_name:visited {
+		color: black;
+		text-decoration: none;
+	}
+
+/* find_a_clinic_wait_times.html */
+	.wait_time_list_item {	
+		border: 1px solid black;
+		border-radius: 4px;
+		padding: 8px;
+		margin: 2px;
+		color: black;
+	}
+
+/* find_a_clinic_date_and_time.html */
+	img.date_time_picker {
+		width: 100%;
+	}	
+
+/* find_a_clinic_clinician.html */
+	.clinician_search {
+		border: 2px solid pink;
+		padding: 4px;
+	}	
+
+	.clinician_name {
+		padding: 4px;
+		margin: 4px;
+		color: black;
+		border: 1px solid black;
+		border-radius: 4px;
+	}
+
+/* search.html */
+	.search_field {
+		border: 2px solid purple;
+		margin-left: 2px;
+	}	
