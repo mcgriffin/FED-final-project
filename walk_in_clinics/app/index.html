@@ -3,11 +3,11 @@
   <head>
     <meta charset="UTF-8">
     <title>walk_in_clinics</title>
-    <meta name="viewport" content="width=device-width", "scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- build:css styles/vendor.css -->
     <link rel="stylesheet" type="text/css" href="../bower_components/normalize-css/normalize.css">
-    
+
     <!-- endbuild -->
 
     <link rel="stylesheet" href="styles/main.css">
@@ -20,7 +20,7 @@
     <!--Top logo bar-->
     <header>  
       <div class="logo_bar">
-        <img src="http://placehold.it/1400x700">
+        <img class="sign_in_page" src="http://placehold.it/1400x700">
       </div>
     </header>  
 
@@ -28,16 +28,13 @@
     <form class="user_credential_entry" action="find_a_clinic_home.html">
       
       <!--Field for people to enter their username-->
-      
       <div class="username_entry">
-        <label for "username_entry">Username</label>
-        <input id="username_entry" name="username_entry" type="text">
+        <input type="text" id="float_username" placeholder="Username" />
       </div>
 
       <!--Field for people to enter their password-->
       <div class="password_entry">
-        <label for "password_entry">Password</label>
-        <input id="password_entry" name="password_entry" type="password">
+        <input type="password" id="float_password" placeholder="Password" />
       </div>
 
       <!--Button for submitting the username and password-->
@@ -47,17 +44,19 @@
 
     </form>
 
-    <!--Copyright note-->
+    <!--Copyright note
     <footer class="copyright_info">
       <p>&copy; 2015 Melissa Griffin</p>
-    </footer>
+    </footer>-->
 
   
 
 
     <!-- build:js scripts/main.js -->
     <script src="../bower_components/jquery/dist/jquery.js"></script>
+    <script src="../bower_components/floatlabel.js/floatlabels.min.js"></script>
     <script src="scripts/main.js"></script>
+    
     <!-- endbuild -->
   </body>
 </html>
