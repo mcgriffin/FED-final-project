@@ -6,7 +6,11 @@
     "neat": "~1.7.0",
     "jquery": "~1.11.0",
     "normalize-css": "~3.0.2",
-    "floatlabel.js": "*"
+    "floatlabel.js": "*",
+    "gmaps": "~0.4.17",
+    "pikabu": "~0.2.2",
+    "slicknav": "~1.0.3",
+    "Chart.js": "~1.0.2"
   },
   "devDependencies": {}
 }
